@@ -22,7 +22,7 @@ FE 심화 코스 사전 과제
   - npm start 로 페이지를 띄웁니다.
 
 - 사용한 스택 목록
-  - <img src="https://img.shields.io/badge/React-%2361DAFB?style=flat&logo=React&logoColor=#61DAFB"/>
+  - 	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - 구현한 기능 목록 (Software Requirement Specification)
 - 구현 방법 혹은 구현하면서 어려웠던 점
 - (가산점) 직접 작성한 Wireframe 혹은 Prototype (figma 등의 다양한 툴 활용)
