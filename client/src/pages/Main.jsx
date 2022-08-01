@@ -104,8 +104,10 @@ export default function Main() {
   useEffect(() => {
     if (search) {
       setFilteredPosts(posts.filter((post) => post.title.includes(search)));
+      setPage(1);
     } else {
       setFilteredPosts(posts);
+      setPage(1);
     }
   }, [search, posts, pageNum]);
 
@@ -128,7 +130,9 @@ export default function Main() {
             ></input>
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
-              onClick={() => setSearch(text)}
+              onClick={() => {
+                setSearch(text);
+              }}
             ></FontAwesomeIcon>
           </Search>
           <select
