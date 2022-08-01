@@ -2,6 +2,7 @@
 FE 심화 코스 사전 과제
 
 ## 완성된 GIF 파일 및 배포 링크
+https://lsj135779.github.io/codestates-fe-advanced-course/
   - pagenation, 페이지당 보이는 게시글 수 변경 기능
   
   ![pagenation](https://user-images.githubusercontent.com/78033706/182104780-7a83d1a9-086b-4d7b-aad3-acc034d97d06.gif)
@@ -63,3 +64,8 @@ FE 심화 코스 사전 과제
   - 새로고침시 state가 초기화되는 것을 막기위해 로컬스토리지에 저장하고 사용하는 방법을 생각하였습니다.
   - state 관리를 위해 redux-tookit을 사용하게 되면서 이와 관련된 방법을 찾던 중에 redux-persist 모듈을 알게되었습니다. (적용하는 방법은 추가 학습이 필요해 보입니다.)
   - 기능구현에 초점을 맞추다 보니 디자인이 돋보이지 못했습니다. 애니메이션이나 hover효과등을 적절한 곳에 더 사용해야 할 거 같습니다.
+  
+## framework
+  - figma 링크
+  
+  https://www.figma.com/file/W1M2TA1jFvImfyFmPAeinW/FE%EC%8B%AC%ED%99%94-%EC%BD%94%EC%8A%A4-%EC%82%AC%EC%A0%84-%EA%B3%BC%EC%A0%9C?node-id=0%3A1
