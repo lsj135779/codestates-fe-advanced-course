@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/codestates-fe-advanced-course/static/js/main.ff7abe66.js",
+    "main.js": "/codestates-fe-advanced-course/static/js/main.d59b2b81.js",
     "index.html": "/codestates-fe-advanced-course/index.html",
-    "main.ff7abe66.js.map": "/codestates-fe-advanced-course/static/js/main.ff7abe66.js.map"
+    "main.d59b2b81.js.map": "/codestates-fe-advanced-course/static/js/main.d59b2b81.js.map"
   },
   "entrypoints": [
-    "static/js/main.ff7abe66.js"
+    "static/js/main.d59b2b81.js"
   ]
 }
