@@ -42,8 +42,23 @@ FE 심화 코스 사전 과제
     ```
   - 위의 기능과 함께 페이지당 얼만큼의 게시글을 보여줄 지 선택할 수 있는 기능을 만들었습니다.
     - 위에서 사용한 pageNum 을 option태그에서 선택된 값으로 변경하여 해당하는 게시글만큼 가져오게 하였습니다.
-  - 검색어
-
+  - 검색어를 입력하고 title에 해당 검색어가 있는 게시글들을 가져오는 기능을 만들었습니다.
+    - 이 기능을 추가로 만들게 되면서 위에 있는 기능들과 충돌하는 부분이 있었습니다.
+    - 기존에 모든 post 데이터에서 위 기능들을 적용하는 것이 아니라 입력한 검색어로 필터한 post 데이터에 적용 시켜야 했습니다.
+    - filteredPosts 라는 state값을 사용하여 아래와 같이 적용시켰습니다.
+    ```js
+      useEffect(() => {
+    if (search) {
+      setFilteredPosts(posts.filter((post) => post.title.includes(search)));
+      setPage(1);
+    } else {
+      setFilteredPosts(posts);
+      setPage(1);
+    }
+  }, [search, posts, pageNum]);
+    ```
+    - 검색하는 부분에 아무것도 입력하지 않고 검색버튼을 누르는 경우 전체 post데이터를 가져오는 것으로 적용했습니다.
+    
 ## 추가 개선사항
   - 새로고침시 state가 초기화되는 것을 막기위해 로컬스토리지에 저장하고 사용하는 방법을 생각하였습니다.
   - state 관리를 위해 redux-tookit을 사용하게 되면서 이와 관련된 방법을 찾던 중에 redux-persist 모듈을 알게되었습니다. (적용하는 방법은 추가 학습이 필요해 보입니다.)
