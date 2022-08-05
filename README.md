@@ -49,14 +49,14 @@ https://lsj135779.github.io/codestates-fe-advanced-course/
     - filteredPosts 라는 state값을 사용하여 아래와 같이 적용시켰습니다.
     ```js
       useEffect(() => {
-    if (search) {
-      setFilteredPosts(posts.filter((post) => post.title.includes(search)));
-      setPage(1);
-    } else {
-      setFilteredPosts(posts);
-      setPage(1);
-    }
-  }, [search, posts, pageNum]);
+        if (search) {
+          setFilteredPosts(posts.filter((post) => post.title.includes(search)));
+          setPage(1);
+        } else {
+          setFilteredPosts(posts);
+          setPage(1);
+          }
+        }, [search, posts, pageNum]);
     ```
     - 검색하는 부분에 아무것도 입력하지 않고 검색버튼을 누르는 경우 전체 post데이터를 가져오는 것으로 적용했습니다.
     
